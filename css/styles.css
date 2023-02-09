@@ -1,0 +1,210 @@
+:root{
+    --colorLaranja:#FFB050;
+    --colorAzul:#4894FF;
+    --colorCinzaClaro:#F6F6F6;
+    --colorPreto:#464646;
+    --fundoGradiente:linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
+    --colorCinza: #a3a3a3;
+}
+
+body{
+    background: var(--fundoGradiente);
+    width: 360px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    height: 2.1rem;
+    background-color: #fff;
+}
+
+.cabecalho__hora{
+    border: none;
+    margin: auto 1rem;
+    color: #333;
+    background-color: #fff;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 160%;
+    width: 10%;
+    height:1.375rem;
+}
+
+.cabecalho__icones{
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cabecalho__icones img{
+    margin-right:1rem;
+}
+.fundo{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card__medico{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+}
+.mascara__avatar{
+    border-radius: 50%;
+    height: 57px;
+    width: 57px;
+    overflow: hidden;
+    position: relative;
+    margin:2rem 1rem 1.375rem;
+}
+
+
+
+.mascara__avatar img, .mascara__avatar-paciente img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nome__medico{
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    color: var(--colorPreto);
+}
+
+.resumo__consultas{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: var(--colorCinza);
+}
+
+.preto_16px_700_25-6{
+    color: var(--colorPreto);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.dia-resumo{
+    margin-left: 1rem;
+}
+.card__consulta-local,.card__consulta-remoto{
+    width: 91%;
+    display: grid;
+    grid-template-rows: 3;
+    grid: "parte1"
+    "parte2"
+    "parte3";
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin: 0.5rem auto 0.5rem;
+}
+.card__paciente{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    grid-area: parte1;
+}
+
+.mascara__avatar-paciente{ 
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    margin: 1rem;
+}
+
+.icone__consulta{
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+
+.tipo__consulta{
+    font-size: 0.75rem;
+    color: var(--colorCinza);
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.chat{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    margin-right: 1rem;
+}
+
+.paciente{
+    width: 50%;
+    margin: auto 0;
+}
+
+.nome__paciente{
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.4rem;
+}
+
+.separador{
+    grid-area: parte2;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(70,70,70,0.1)
+}
+
+.horario{
+    margin: .5rem 1rem;
+    grid-area: parte2;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+.cta__buttons, .cta__buttons-unico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: parte3;
+}
+
+.videocall, .audiocall{
+    width: 8.7rem;
+    height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.videocall{
+    background-color: var(--colorLaranja);
+    color: #fff;
+    border: none;
+}
+
+.audiocall{
+    background-color: #fff;
+    border: 1px solid #ECECEC;
+}
+
+.presencial{
+    background-color: var(--colorAzul);
+    width:91%;
+    color: #fff;
+    height: 3rem;
+    border-radius: .5rem;
+    margin:0.5rem auto 1rem;
+    border:none;
+}
+.dia{
+    background-color: rgba(255, 255, 255, 0.3);
+}

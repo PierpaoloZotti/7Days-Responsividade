@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ClinicaFacil</title>
+</head>
+<body>
+    <header class="cabecalho">
+          <input type="text" name="relogio" id="hora__atual" disabled="" class="cabecalho__hora">
+          <div class="cabecalho__icones">
+            <img src="img/signal_cellular_4_bar.svg" alt="Sinal Cellular">
+            <img src="img/battery_full.svg" alt="Bateria">
+            <img src="img/wifi.svg" alt="Sinal Wifi">
+          </div>
+    </header>
+    <main>
+        <section class="card__medico fundo">
+            <div class="mascara__avatar">
+                <img src="img/perfil-1.jpg" alt="Foto Doutora">
+            </div>
+            <div class="titulo__medico">
+                <h1 class="nome__medico">Olá, Sonia</h1>
+                <h3 class="resumo__consultas">Mais 4 consultas hoje</h2>
+            </div>
+        </section>
+        <section class="dia">
+            <h2 class="preto_16px_700_25-6 fundo dia-resumo">
+                Hoje
+            </h2>
+            <section class="card__consulta-remoto">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-2.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Luciana Dias</h3>
+                        <span class="icone__consulta">
+                            <img src="img/Camera.svg" alt="Camera">
+                        </span>
+                        <span class="tipo__consulta-local">
+                            Consulta remota
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">14:00 - 15:00 (1 hora)</p>
+                <section class="cta__buttons">
+                    <button id="videocall" class="videocall">Ligar por video</button>
+                    <button id="audiocall" class="audiocall">Ligar por audio</button>
+                </section>
+            </section>
+            <section class="card__consulta-local">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-3.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Larissa Santana</h3>
+                        <span class="icone__consulta">
+                            <img src="img/pin.svg" alt="Pin">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta no local
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">16:00 - 17:00 - (1 hora)</p>
+                <section class="cta__buttons-unico">
+                    <button id="presencial" class="presencial">Ver endereço</button>
+                </section>
+            </section>
+            <section class="card__consulta-remoto">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-4.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Marcos Correia</h3>
+                        <span class="icone__consulta">
+                            <img src="img/Camera.svg" alt="Camera">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta remota
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                <section class="cta__buttons">
+                    <button id="videocall" class="videocall">Ligar por video</button>
+                    <button id="audiocall" class="audiocall">Ligar por audio</button>
+                </section>
+            </section>
+        </section>
+        <section class="dia">
+            <h2 class="preto_16px_700_25-6 fundo dia-resumo">
+                Amanhã
+            </h2>
+            <section class="card__consulta-local">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-5.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Clara Lemos</h3>
+                        <span class="icone__consulta">
+                            <img src="img/pin.svg" alt="Pin">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta no local
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">18:00 - 19:00 - (1 hora)</p>
+                <section class="cta__buttons-unico">
+                    <button id="presencial" class="presencial">Ver endereço</button>
+                </section>
+            </section>
+            <section class="card__consulta-remoto">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-2.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Luciana Dias</h3>
+                        <span class="icone__consulta">
+                            <img src="img/Camera.svg" alt="Camera">
+                        </span>
+                        <span class="tipo__consulta-local">
+                            Consulta remota
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">14:00 - 15:00 (1 hora)</p>
+                <section class="cta__buttons">
+                    <button id="videocall" class="videocall">Ligar por video</button>
+                    <button id="audiocall" class="audiocall">Ligar por audio</button>
+                </section>
+            </section>
+            <section class="card__consulta-remoto">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-4.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Marcos Correia</h3>
+                        <span class="icone__consulta">
+                            <img src="img/Camera.svg" alt="Camera">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta remota
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                <section class="cta__buttons">
+                    <button id="videocall" class="videocall">Ligar por video</button>
+                    <button id="audiocall" class="audiocall">Ligar por audio</button>
+                </section>
+            </section>
+            <section class="card__consulta-local">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-3.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Larissa Santana</h3>
+                        <span class="icone__consulta">
+                            <img src="img/pin.svg" alt="Pin">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta no local
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">16:00 - 17:00 - (1 hora)</p>
+                <section class="cta__buttons-unico">
+                    <button id="presencial" class="presencial">Ver endereço</button>
+                </section>
+            </section>
+
+        </section>
+        <section class="dia">
+            <h2 class="preto_16px_700_25-6 fundo dia-resumo">
+                Quarta-feira
+            </h2>
+            <section class="card__consulta-local">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-5.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Clara Lemos</h3>
+                        <span class="icone__consulta">
+                            <img src="img/pin.svg" alt="Pin">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta no local
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">18:00 - 19:00 - (1 hora)</p>
+                <section class="cta__buttons-unico">
+                    <button id="presencial" class="presencial">Ver endereço</button>
+                </section>
+            </section>
+            <section class="card__consulta-remoto">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-2.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Luciana Dias</h3>
+                        <span class="icone__consulta">
+                            <img src="img/Camera.svg" alt="Camera">
+                        </span>
+                        <span class="tipo__consulta-local">
+                            Consulta remota
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">14:00 - 15:00 (1 hora)</p>
+                <section class="cta__buttons">
+                    <button id="videocall" class="videocall">Ligar por video</button>
+                    <button id="audiocall" class="audiocall">Ligar por audio</button>
+                </section>
+            </section>
+            <section class="card__consulta-remoto">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-4.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Marcos Correia</h3>
+                        <span class="icone__consulta">
+                            <img src="img/Camera.svg" alt="Camera">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta remota
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">17:20 - 18:00 (40 minutos)</p>
+                <section class="cta__buttons">
+                    <button id="videocall" class="videocall">Ligar por video</button>
+                    <button id="audiocall" class="audiocall">Ligar por audio</button>
+                </section>
+            </section>
+            <section class="card__consulta-local">
+                <section class="card__paciente">
+                    <div class="mascara__avatar-paciente">
+                        <img src="img/perfil-3.jpg" alt="Foto Paciente">
+                    </div>
+                    <div class="paciente">
+                        <h3 class="nome__paciente">Larissa Santana</h3>
+                        <span class="icone__consulta">
+                            <img src="img/pin.svg" alt="Pin">
+                        </span>
+                        <span class="tipo__consulta">
+                            Consulta no local
+                        </span>
+                    </div>
+                    <div class="chat">
+                        <img src="img/Chatcirculo1.svg" alt="chat">
+                    </div>
+                    
+                </section>
+                <div class="separador"></div>
+                <p class="horario">16:00 - 17:00 - (1 hora)</p>
+                <section class="cta__buttons-unico">
+                    <button id="presencial" class="presencial">Ver endereço</button>
+                </section>
+            </section>
+
+        </section>
+
+    </main>
+    <script src="js/relogio.js"></script>
+</body>
+</html>
