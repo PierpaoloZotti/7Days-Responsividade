@@ -131,3 +131,17 @@
   .consulta__card-acoes button:only-of-type{
     margin: 0;
   }
+
+  @media (min-width:961px){
+    .consultas ul{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      align-items: left;
+      justify-content: start;
+      flex-wrap: wrap;
+    }
+    .consulta__card{
+      margin-right: 16px;
+    }
+  }
