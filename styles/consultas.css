@@ -137,24 +137,19 @@
       list-style: none;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      align-items: left;
-      justify-content: start;
-      flex-wrap: wrap;
+      justify-items: center;
+      gap: 10px;
     }
-    .consulta__card{
-      margin-right: 16px;
-    }
+   
   }
   @media (min-width:961px){
     .consultas ul{
       list-style: none;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      align-items: left;
-      justify-content: start;
-      flex-wrap: wrap;
+      justify-items: center;
+      gap: 10px;
     }
-    .consulta__card{
-      margin-right: 16px;
-    }
+    
+ 
   }
