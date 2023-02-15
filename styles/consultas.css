@@ -1,9 +1,13 @@
 .consultas{
+    
     padding: 0 16px;
     height: calc(100vh - 110px - 58px);
-    overflow-y: scroll;
-  }
+    overflow-y:scroll;
   
+  }
+  .consultas::-webkit-scrollbar{
+    display: none;
+  }
   .consultas__data{
     display: flex;
     align-items: center;
@@ -133,6 +137,7 @@
   }
 
   @media (min-width:700px){
+
     .consultas ul{
       list-style: none;
       display: grid;
@@ -140,9 +145,14 @@
       justify-items: center;
       gap: 10px;
     }
+
    
+
+
   }
   @media (min-width:961px){
+    
+    
     .consultas ul{
       list-style: none;
       display: grid;

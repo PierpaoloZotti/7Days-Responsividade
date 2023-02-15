@@ -1,4 +1,42 @@
+.body{
+  display: flex;
+  
+}
+.navbar .menu-items li a{
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+  opacity: 0.3;
+  
+}
+.navbar, .menu-items {
+  padding-top: 10px;
+  background: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
+  height: 100vh;
+  max-width: 200px;
+  border-right: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  margin-left: 0px;
+  padding-left: 10px;
+
+  
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.navbar .menu-items li a {
+  display: flex;
+  justify-content: space-between;
+
+}
 section.home{
+    
     display: flex;
     align-items: center;
     height: 110px;
@@ -21,3 +59,67 @@ section.home{
     font-weight: 400;
     color: var(--texto-claro);
   }
+  @media (max-width: 899px){
+  nav.navbar{
+    display: none;
+  }
+}
+  @media (min-width: 900px) {
+    .body{
+      display: flex; 
+      
+    }
+    nav.navbar span{
+     
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .home{
+      display: inline-block;
+      position: absolute;
+      top:0;
+      left:210px;
+      
+    }
+    .consultas{
+      
+      position:absolute;
+      top:110px;
+      left:210px;
+      
+    }
+
+    section.rodape, .rodape__acao{
+      display: none;
+      background-color: linear-gradient(165.96deg, #F8F4FF 0%, #EFF0F4 100%);
+      
+    }
+    
+    span.consultas-icone-desktop{
+      background-image: url('../assets/icons/Calendar.svg');
+      
+      transition: transform 0.2s;
+    }
+    span.clientes-icone-desktop{
+      background-image: url('../assets/icons/Clientes.svg');
+      
+      transition: transform 0.2s;
+    }
+    span.relatorios-icone-desktop{
+      background-image: url('../assets/icons/Relatorios.svg');
+      
+      transition: transform 0.2s;
+    }
+    span.menu-icone-desktop{
+      background-image: url('../assets/icons/Menu.svg');
+      
+      transition: transform 0.2s;
+    }
+}
+      
+ 
+  
+  
+   

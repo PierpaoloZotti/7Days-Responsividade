@@ -26,23 +26,26 @@ section.rodape{
     color: var(--texto-claro);
     font-size: 12px;
   }
-  .rodape nav .rodape__acao:first-child{
+  /* .rodape nav .rodape__acao:first-child{
     color: var(--cor-primaria);
-  }
+  } */
   
   .rodape nav .rodape__acao span{
     width: 24px;
     height: 24px;
-  
     background-position: center;
     background-repeat: no-repeat;
+    
   }
   .rodape nav .rodape__acao span.consultas-icone{
     background-image: url('../assets/icons/Calendar.svg');
+    opacity: 30%;
+    transition: transform 0.2s;
   }
   .rodape nav .rodape__acao span.clientes-icone{
     opacity: 30%;
     background-image: url('../assets/icons/Clientes.svg');
+    transition: transform 0.2s;
   }
   .rodape nav .rodape__acao span.relatorios-icone{
     opacity: 30%;
@@ -51,4 +54,22 @@ section.rodape{
   .rodape nav .rodape__acao span.menu-icone{
     opacity: 30%;
     background-image: url('../assets/icons/Menu.svg');
+  }
+
+  .rodape nav .rodape__acao span.consultas-icone:hover{
+    transform: scale(1.05);
+    color: var(--cor-primaria);
+    filter: invert(58%) sepia(72%) saturate(3669%) hue-rotate(196deg) brightness(101%) contrast(101%);
+    opacity: 100%;
+  }
+  .consultas-icone:hover{
+    color: var(--cor-primaria);
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  @media (min-width:890px){
+    section.rodape{
+      display: none;
+    }
   }
